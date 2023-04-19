@@ -6,14 +6,14 @@ import android.os.Bundle
 import com.example.cristina_rubio_ignacio_tfg.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.Loginbtn.setOnClickListener { loginScreen() }
-        binding.Registerbtn.setOnClickListener { registerScreen() }
+        binding.btnLogin.setOnClickListener { loginScreen() }
+        binding.btnSignUp.setOnClickListener { registerScreen() }
     }
 
     private fun registerScreen() {

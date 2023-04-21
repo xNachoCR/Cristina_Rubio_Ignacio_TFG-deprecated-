@@ -16,11 +16,13 @@ class MainActivity : AppCompatActivity() {
         binding.btnSignUp.setOnClickListener { registerScreen() }
     }
 
+    //Función que lleva al SignUpActivity al pulsar el botón "btn_sign_up"
     private fun registerScreen() {
         val intent = Intent(this, SignUpActivity::class.java)
         startActivity(intent)
     }
 
+    //Función que lleve al LoginActivity al pulsar el botón "btn_login"
     private fun loginScreen() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)

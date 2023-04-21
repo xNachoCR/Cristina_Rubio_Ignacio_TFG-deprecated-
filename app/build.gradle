@@ -4,8 +4,6 @@ plugins {
     id 'com.google.gms.google-services'
 }
 
-
-
 android {
     namespace 'com.example.cristina_rubio_ignacio_tfg'
     compileSdk 33
